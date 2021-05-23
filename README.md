@@ -44,4 +44,4 @@ $ npm run test:cov
 
 - [NestJS](https://nestjs.com/)
 - [TypeORM](https://docs.nestjs.com/techniques/database)
-
+- [Bcrypt](https://www.npmjs.com/package/bcrypt)
