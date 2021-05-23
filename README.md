@@ -42,6 +42,6 @@ $ npm run test:cov
 
 ## Resources
 
-- Website - [https://nestjs.com](https://nestjs.com/)
-- TypeORM
+- [NestJS](https://nestjs.com/)
+- [TypeORM](https://docs.nestjs.com/techniques/database)
 
