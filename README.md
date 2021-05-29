@@ -42,6 +42,11 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
+## Endpoints
+
+  /api/register
+  /api/login
+
 ## Resources and packages
 
 - [NestJS](https://nestjs.com/)
@@ -49,3 +54,4 @@ $ npm run test:cov
 - [Bcrypt](https://www.npmjs.com/package/bcrypt)
 - [Class Validator](https://github.com/typestack/class-validator)
 - [Class Transformer](https://www.npmjs.com/package/class-transformer)
+- Passport, passport-local, passport-jwt
