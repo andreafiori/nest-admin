@@ -26,6 +26,7 @@ export class UserService {
     return {
       data: users.map(user => {
         const {password, ...data} = user;
+
         return data;
       }),
       meta: {

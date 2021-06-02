@@ -50,7 +50,7 @@ $ npm run test:cov
 ## Resources and packages
 
 - [NestJS](https://nestjs.com/)
-- [TypeORM](https://docs.nestjs.com/techniques/database)
+- [TypeORM](https://typeorm.io/)
 - [Bcrypt](https://www.npmjs.com/package/bcrypt)
 - [Class Validator](https://github.com/typestack/class-validator)
 - [Class Transformer](https://www.npmjs.com/package/class-transformer)
