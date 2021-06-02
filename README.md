@@ -35,6 +35,9 @@ Port: http://localhost:8000
 # unit tests
 $ npm run test
 
+# unit tests in watch mode
+test:watch
+
 # e2e tests
 $ npm run test:e2e
 
@@ -46,6 +49,13 @@ $ npm run test:cov
 
   /api/register
   /api/login
+  /api/users
+  /api/users/:id
+  /api/roles
+  /api/roles/:id
+  /api/permissions
+  /api/products
+  /api/orders
 
 ## Resources and packages
 

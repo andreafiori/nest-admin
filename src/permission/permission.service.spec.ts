@@ -5,8 +5,25 @@ describe('PermissionService', () => {
   let service: PermissionService;
 
   beforeEach(async () => {
+    // Mock service
+    const mockUserEntity = {
+      all: () => [
+        {
+          id: 1,
+          name: 'view_users'
+        }
+      ]
+    };
+
     const module: TestingModule = await Test.createTestingModule({
-      providers: [PermissionService],
+      providers: [
+        {
+          provide: PermissionService,
+          useValue: {
+            get: jest.fn(() => mockUserEntity)
+          }
+        }
+      ],
     }).compile();
 
     service = module.get<PermissionService>(PermissionService);
