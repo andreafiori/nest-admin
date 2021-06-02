@@ -23,11 +23,12 @@ export class UserController {
   async create(@Body() body: UserCreateDto): Promise<User> {
     const password = await bcrypt.hash('1234', 12);
 
+    const {role_id, ...data} = body;
+
     return this.userService.create({
-      first_name: body.first_name,
-      last_name: body.last_name,
-      email: body.email,
-      password: password
+      ...data,
+      password: password,
+      role: {id: role_id}
     });
   }
 
@@ -42,7 +43,12 @@ export class UserController {
     @Body() body: UserUpdateDto
   ) {
     // TODO check input email
-    await this.userService.update(id, body);
+    const {role_id, ...data} = body;
+
+    await this.userService.update(id, {
+      ...data,
+      role: {id: role_id}
+    });
 
     return this.userService.findOne(id);
   }
