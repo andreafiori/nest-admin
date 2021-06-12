@@ -5,8 +5,25 @@ describe('RoleService', () => {
   let service: RoleService;
 
   beforeEach(async () => {
+    // Mock service
+    const mockUserEntity = {
+      all: () => [
+        {
+          id: 1,
+          name: 'view_users'
+        }
+      ]
+    };
+
     const module: TestingModule = await Test.createTestingModule({
-      providers: [RoleService],
+      providers: [
+        {
+          provide: RoleService,
+          useValue: {
+            get: jest.fn(() => mockUserEntity)
+          }
+        }
+      ],
     }).compile();
 
     service = module.get<RoleService>(RoleService);

@@ -1,4 +1,4 @@
-## Docker, NestJS and Angular
+## Docker, NestJS admin application demo
 
 Application demo using Docker, NestJS as NodeJS backend and Angular for the frontend.
 
@@ -29,7 +29,9 @@ $ npm run start:prod
 
 Port: http://localhost:8000
 
-## Test
+## Testing
+
+TODO the testing part was not part of the couse. Add tests for this app
 
 ```bash
 # unit tests
